@@ -1,0 +1,21 @@
+<div>
+  <nav class="global-nav" style="background-color:#074E68;">
+    <div class="global-nav-title row">
+      <div class="small-6 columns">
+        <h3 style='color:white;line-height:2em;'>CN Golden View</h3>
+      </div>
+      <div class="small-2 columns" style='text-align:center;line-height:4em;'>
+        <%= link_to('登出', destroy_admin_user_session_path, method: :delete, style: 'color:white;' ) %> 
+      </div>
+    </div>
+  </nav>
+  <div class="collapse row secondary-bar expanded" style="border-bottom:1px solid #e0e0e0;position:relative;">
+    <div class="small-5 medium-3 large-2 columns" style="text-align:center;">
+      <%= link_to warehouses_path do %>
+        <h4 class="" style="color:#9f9f9f;line-height:2em;">仓库</h4>
+      <% end %>
+    </div>
+    <div class="small-12 medium-9 large-10 columns show-for-medium docs-search-wrapper" style="position:relative;">
+    </div>
+  </div>
+</div>

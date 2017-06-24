@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <style type="text/css" media="all">
+.docs-nav.menu {
+  overflow: auto;
+  background: #f7f7f7;
+    min-height: 10em;
+}
+.docs-nav.menu li a{
+  color: #0a0a0a;
+}
+.docs-nav.menu li a::after{
+  color: #0a0a0a;
+  border-color: #0a0a0a transparent transparent;
+}
+    </style>
+  </head>
+
+  <body>
+
+    <%= render "shared/navbar" %>
+    <div class="collapse expanded row">
+      <div class="small-12 medium-9 large-10 medium-push-3 large-push-2 columns">
+        <%= yield %>
+      </div>
+      <div class="medium-3 large-2 medium-pull-9 large-pull-10 hide-for-small-only columns sticky-container">
+        <div class="docs-nav-container sticky is-anchored is-at-top">
+          <div class="vertical menu docs-nav" style="padding-bottom:1em;padding-top:1em;">
+            <ul class="vertical menu" data-accordion-menu style='background:none;'>
+              <li>
+                <a href="#">半成品仓</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#">壶盖</a></li>
+                  <li><a href="#">弹簧</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">原材料仓</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#">塑料</a></li>
+                  <li><a href="#">硅胶</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">包装物料仓</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#">纸箱</a></li>
+                  <li><a href="#">袋子</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
