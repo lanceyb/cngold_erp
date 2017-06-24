@@ -17,10 +17,15 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
+gem 'jquery-rails'
+gem 'therubyracer', platforms: :ruby
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
+gem 'devise'
+gem 'simple_form'
+gem 'cancancan', '~> 1.10'
+gem 'foundation-rails'
 
 group :development, :test do
 end
