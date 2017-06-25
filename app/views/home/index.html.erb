@@ -1,0 +1,39 @@
+<div class="row" style="margin-top:1em;padding-left: 1em;">
+  <h4>报表</h4>
+  <div style="overflow:auto;width:100%;">
+    <table style="width:2000px;">
+      <thead>
+        <tr>
+          <th width="80">操作</th>
+          <th width="100">预售单号</th>
+          <th width="100">预售单状态</th>
+          <th width="150">出仓申请时间</th>
+          <th width="100">出仓申请人</th>
+          <th width="150">出仓状态</th>
+          <th width="100">出仓审批人</th>
+          <th width="150">生产开始时间</th>
+          <th width="150">半成品数</th>
+          <th width="100">成品数</th>
+          <th width="100">成品入库数</th>
+          <th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= link_to '详情', '#' %></td>
+          <td>123123123</td>
+          <td><span class="label">出仓审批中</span></td>
+          <td>2017-07-07 10:30</td>
+          <td>张三</td>
+          <td><span class="label alert">未批准</span></td>
+          <td></td>
+          <td></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>预计损耗:4%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -28,6 +28,15 @@
   <body>
 
     <%= render "shared/navbar" %>
+    <div class="collapse row secondary-bar expanded" style="border-bottom:1px solid #e0e0e0;position:relative;">
+      <div class="small-5 medium-3 large-2 columns" style="text-align:center;">
+        <%= link_to warehouses_path do %>
+          <h4 class="" style="color:#9f9f9f;line-height:2em;">仓库</h4>
+        <% end %>
+      </div>
+      <div class="small-12 medium-9 large-10 columns show-for-medium docs-search-wrapper" style="position:relative;">
+      </div>
+    </div>
     <div class="collapse expanded row">
       <div class="small-12 medium-9 large-10 medium-push-3 large-push-2 columns">
         <%= yield %>
